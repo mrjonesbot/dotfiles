@@ -39,3 +39,39 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+export GOPATH=$HOME/go
+export GO111MODULE=on
+
+eval "$(rbenv init -)"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+function docker_compose_container {
+  dirname=${PWD##*/}
+  container="${COMPOSE_PROJECT_NAME:-$dirname}_$1_1"
+  echo $container
+}
+
+function docker_compose_exec {
+  container=$(docker_compose_container $1)
+  shift
+  echo -e "\nExecuting the provided command within a running container:"
+  echo -e "\n\033[1m\033[36mdocker exec -it \033[92m$container \033[33m$@\033[0m\n"
+  docker exec -it $container $@
+}
+
+function docker_compose_attach {
+  container=$(docker_compose_container $1)
+  shift
+  echo -e "\nAttaching to a running service:"
+  echo -e "\n\033[1m\033[36mdocker attach \033[92m$container \033[0m\n"
+  docker attach $container
+}
+
+alias dc=docker-compose
+alias de=docker_compose_exec
+alias da=docker_compose_attach
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

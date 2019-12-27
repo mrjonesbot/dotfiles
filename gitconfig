@@ -13,9 +13,11 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  cm = commit -m
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+	editor = code --wait
 [merge]
   ff = only
 [commit]
@@ -28,3 +30,10 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	email = nathan.jones@yello.co
+	name = Nathan Jones
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/

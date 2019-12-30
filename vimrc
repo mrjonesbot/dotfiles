@@ -21,6 +21,15 @@ nmap 0 ^
 
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
+nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
+nmap <leader>vi :tabedit ~/.vimrc<cr>
+nmap <leader>co ggVG*y
+
+imap jk <esc>
+imap kj <esc>
+
+imap <C-s> <esc>:w<cr>
+nmap <C-s> :w<cr>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -187,7 +196,7 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-packadd! onedark.vim
+" packadd! onedark.vim
 
 if (empty($TMUX))
   if (has("nvim"))
@@ -202,21 +211,31 @@ if (empty($TMUX))
   endif
 endif
 
-syntax on
-colorscheme onedark
-
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensible'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
-Plug 'jiangmiao/auto-pairs'
+
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-sensible'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'MarcWeber/vim-addon-mw-utils'
+  Plug 'tomtom/tlib_vim'
+  Plug 'garbas/vim-snipmate'
+  Plug 'honza/vim-snippets'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'rakr/vim-one'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'tpope/vim-rails'
+
 call plug#end()
 
-set tags^=.git/tags;
-" map <C-n> :NERDTreeToggle<CR>
 
-execute pathogen#infect()
+  syntax on
+  set background=dark
+  colorscheme one
+  " colorscheme palenight
+  " colorscheme onedark
+  " colorscheme codedark
+
+set tags^=.git/tags;
+set rtp+=~/.fzf
+
+" execute pathogen#infect()

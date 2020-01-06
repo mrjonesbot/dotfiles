@@ -15,6 +15,7 @@
   st = status
   cm = commit -m
   cma = commit --amend
+	conflicted = !vim +Conflicted
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input

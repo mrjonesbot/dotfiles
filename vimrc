@@ -218,8 +218,6 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-" packadd! onedark.vim
-
 if (empty($TMUX))
   if (has("nvim"))
     "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
@@ -245,6 +243,7 @@ set background=dark
 colorscheme one
 set tags^=.git/tags;
 set rtp+=~/.fzf
+set stl+=%{ConflictedVersion()}
 
 " Tmux + Vim Balance Configurations
 " automatically rebalance windows on vim resize"

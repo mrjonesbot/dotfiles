@@ -1,0 +1,288 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.009  000.009: --- VIM STARTING ---
+000.126  000.117: Allocated generic buffers
+000.718  000.592: locale set
+000.722  000.004: clipboard setup
+000.728  000.006: window checked
+001.289  000.561: inits 1
+001.442  000.153: parsing arguments
+001.444  000.002: expanding arguments
+006.081  004.637: shell init
+006.407  000.326: Termcap init
+006.421  000.014: inits 2
+006.558  000.137: init highlight
+008.095  000.706  000.706: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+008.231  000.920  000.214: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+013.476  000.016  000.016: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+013.544  005.239  005.223: sourcing /usr/local/share/vim/vim82/filetype.vim
+013.572  006.353  000.194: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+015.310  001.581  001.581: sourcing /Users/nathanjones/.vim/autoload/plug.vim
+019.263  001.344  001.344: sourcing /usr/local/share/vim/vim82/ftoff.vim
+025.964  000.038  000.038: sourcing /Users/nathanjones/.vim/bundle/vim-elixir/ftdetect/elixir.vim
+026.202  000.163  000.163: sourcing /Users/nathanjones/.vim/bundle/vim-go/ftdetect/gofiletype.vim
+026.308  000.014  000.014: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/flow.vim
+026.369  000.028  000.028: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/javascript.vim
+026.531  000.027  000.027: sourcing /Users/nathanjones/.vim/bundle/vim-slim/ftdetect/slim.vim
+026.625  000.012  000.012: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/ftdetect/fugitive.vim
+026.811  000.077  000.077: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby.vim
+026.945  000.101  000.101: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby_extra.vim
+027.067  000.043  000.043: sourcing /Users/nathanjones/.vim/bundle/vim-jsx/ftdetect/javascript.vim
+027.207  000.013  000.013: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+027.288  006.275  005.759: sourcing /usr/local/share/vim/vim82/filetype.vim
+027.511  000.050  000.050: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+027.713  000.032  000.032: sourcing /usr/local/share/vim/vim82/indent.vim
+027.757  014.093  004.811: sourcing /Users/nathanjones/.vimrc.bundles
+029.528  000.234  000.234: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/pack/dist/opt/matchit/plugin/matchit.vim
+029.562  001.134  000.900: sourcing /usr/local/share/vim/vim82/macros/matchit.vim
+029.754  000.013  000.013: sourcing /usr/local/share/vim/vim82/filetype.vim
+029.931  000.010  000.010: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+030.110  000.010  000.010: sourcing /usr/local/share/vim/vim82/indent.vim
+030.882  000.178  000.178: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/syntax/nosyntax.vim
+031.383  000.139  000.139: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+031.480  000.416  000.277: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+031.502  000.862  000.268: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+031.851  000.127  000.127: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+032.420  000.128  000.128: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+032.893  000.141  000.141: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+042.231  010.235  009.966: sourcing /Users/nathanjones/.vim/bundle/vim-one/colors/one.vim
+042.300  035.512  002.675: sourcing $HOME/.vimrc
+042.305  000.235: sourcing vimrc file(s)
+042.541  000.030  000.030: sourcing /Users/nathanjones/.vim/plugin/ctags.vim
+042.665  000.029  000.029: sourcing /Users/nathanjones/.vim/bundle/vim-run-interactive/plugin/run-interactive.vim
+043.293  000.540  000.540: sourcing /Users/nathanjones/.fzf/plugin/fzf.vim
+044.089  000.696  000.696: sourcing /Users/nathanjones/.vim/bundle/fzf.vim/plugin/fzf.vim
+044.666  000.361  000.361: sourcing /Users/nathanjones/.vim/bundle/vim-go/autoload/go/config.vim
+045.249  000.302  000.302: sourcing /Users/nathanjones/.vim/bundle/vim-go/autoload/go/util.vi
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.006  000.006: --- VIM STARTING ---
+000.109  000.103: Allocated generic buffers
+000.582  000.473: locale set
+000.586  000.004: clipboard setup
+000.591  000.005: window checked
+001.134  000.543: inits 1
+001.313  000.179: parsing arguments
+001.316  000.003: expanding arguments
+011.046  009.730: shell init
+011.366  000.320: Termcap init
+011.380  000.014: inits 2
+011.498  000.118: init highlight
+014.584  001.799  001.799: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+014.680  002.236  000.437: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+021.120  000.314  000.314: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+021.192  006.445  006.131: sourcing /usr/local/share/vim/vim82/filetype.vim
+021.222  009.170  000.489: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+023.847  002.117  002.117: sourcing /Users/nathanjones/.vim/autoload/plug.vim
+028.061  001.725  001.725: sourcing /usr/local/share/vim/vim82/ftoff.vim
+035.092  000.344  000.344: sourcing /Users/nathanjones/.vim/bundle/vim-elixir/ftdetect/elixir.vim
+036.004  000.796  000.796: sourcing /Users/nathanjones/.vim/bundle/vim-go/ftdetect/gofiletype.vim
+036.635  000.455  000.455: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/flow.vim
+037.184  000.460  000.460: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/javascript.vim
+037.650  000.306  000.306: sourcing /Users/nathanjones/.vim/bundle/vim-slim/ftdetect/slim.vim
+038.247  000.447  000.447: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/ftdetect/fugitive.vim
+039.110  000.649  000.649: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby.vim
+039.728  000.531  000.531: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby_extra.vim
+040.445  000.550  000.550: sourcing /Users/nathanjones/.vim/bundle/vim-jsx/ftdetect/javascript.vim
+040.829  000.036  000.036: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+040.985  011.237  006.663: sourcing /usr/local/share/vim/vim82/filetype.vim
+041.643  000.383  000.383: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+042.277  000.348  000.348: sourcing /usr/local/share/vim/vim82/indent.vim
+042.363  021.001  005.191: sourcing /Users/nathanjones/.vimrc.bundles
+047.236  001.297  001.297: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/pack/dist/opt/matchit/plugin/matchit.vim
+047.315  004.024  002.727: sourcing /usr/local/share/vim/vim82/macros/matchit.vim
+047.598  000.022  000.022: sourcing /usr/local/share/vim/vim82/filetype.vim
+047.940  000.029  000.029: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+048.249  000.027  000.027: sourcing /usr/local/share/vim/vim82/indent.vim
+049.320  000.288  000.288: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/syntax/nosyntax.vim
+049.927  000.165  000.165: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+050.045  000.501  000.336: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+050.075  001.113  000.324: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+050.504  000.158  000.158: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+051.778  000.213  000.213: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+052.303  000.170  000.170: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+062.762  012.083  011.700: sourcing /Users/nathanjones/.vim/bundle/vim-one/colors/one.vim
+062.837  051.127  003.500: sourcing $HOME/.vimrc
+062.844  000.219: sourcing vimrc file(s)
+065.789  000.487  000.487: sourcing /Users/nathanjones/.vim/plugin/ctags.vim
+066.452  000.494  000.494: sourcing /Users/nathanjones/.vim/bundle/vim-run-interactive/plugin/run-interactive.vim
+068.336  001.725  001.725: sourcing /Users/nathanjones/.fzf/plugin/fzf.vim
+070.485  001.316  001.316: sourcing /Users/nathanjones/.vim/bundle/vim-go/autoload/go/config.vim
+072.648  001.211  001.211: sourcing /Users/nathanjones/.vim/bundle/vim-go/autoload/go/util.vim
+072.693  004.198  001.671: sourcing /Users/nathanjones/.vim/bundle/vim-go/plugin/go.vim
+074.542  001.093  001.093: sourcing /Users/nathanjones/.vim/bundle/vim-test/autoload/test.vim
+075.807  002.959  001.866: sourcing /Users/nathanjones/.vim/bundle/vim-test/plugin/test.vim
+076.393  000.417  000.417: sourcing /Users/nathanjones/.vim/bundle/vim-mkdir/plugin/mkdir.vim
+079.012  002.445  002.445: sourcing /Users/nathanjones/.vim/bundle/vim-bundler/plugin/bundler.vim
+080.011  000.844  000.844: sourcing /Users/nathanjones/.vim/bundle/vim-endwise/plugin/endwise.vim
+081.825  001.629  001.629: sourcing /Users/nathanjones/.vim/bundle/vim-eunuch/plugin/eunuch.vim
+083.909  001.936  001.936: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/plugin/fugitive.vim
+085.130  001.073  001.073: sourcing /Users/nathanjones/.vim/bundle/vim-projectionist/plugin/projectionist.vim
+086.468  001.170  001.170: sourcing /Users/nathanjones/.vim/bundle/vim-rails/plugin/rails.vim
+087.744  001.113  001.113: sourcing /Users/nathanjones/.vim/bundle/vim-rake/plugin/rake.vim
+088.550  000.636  000.636: sourcing /Users/nathanjones/.vim/bundle/vim-rhubarb/plugin/rhubarb.vim
+089.846  001.159  001.159: sourcing /Users/nathanjones/.vim/bundle/vim-surround/plugin/surround.vim
+093.727  003.709  003.709: sourcing /Users/nathanjones/.vim/bundle/tComment/plugin/tcomment.vim
+094.600  000.698  000.698: sourcing /Users/nathanjones/.vim/bundle/vim-tmux-navigator/plugin/tmux_navigator.vim
+096.015  001.289  001.289: sourcing /Users/nathanjones/.vim/bundle/vim-tmux-runner/plugin/vim-tmux-runner.vim
+096.581  000.444  000.444: sourcing /Users/nathanjones/.vim/bundle/vim-rspec/plugin/rspec.vim
+098.065  001.362  001.362: sourcing /Users/nathanjones/.vim/bundle/auto-pairs/plugin/auto-pairs.vim
+098.585  000.019  000.019: sourcing /usr/local/share/vim/vim82/filetype.vim
+098.797  000.014  000.014: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+098.998  000.013  000.013: sourcing /usr/local/share/vim/vim82/indent.vim
+099.184  000.994  000.948: sourcing /Users/nathanjones/.vim/bundle/vim-sensible/plugin/sensible.vim
+101.663  002.364  002.364: sourcing /Users/nathanjones/.vim/bundle/vim-dispatch/plugin/dispatch.vim
+102.278  000.476  000.476: sourcing /Users/nathanjones/.vim/bundle/vim-conflicted/plugin/conflicted.vim
+104.688  000.759  000.759: sourcing /Users/nathanjones/.vim/bundle/ale/autoload/ale/events.vim
+104.935  002.527  001.768: sourcing /Users/nathanjones/.vim/bundle/ale/plugin/ale.vim
+105.590  000.227  000.227: sourcing /usr/local/share/vim/vim82/plugin/getscriptPlugin.vim
+105.960  000.315  000.315: sourcing /usr/local/share/vim/vim82/plugin/gzip.vim
+106.549  000.534  000.534: sourcing /usr/local/share/vim/vim82/plugin/logiPat.vim
+106.766  000.159  000.159: sourcing /usr/local/share/vim/vim82/plugin/manpager.vim
+107.379  000.543  000.543: sourcing /usr/local/share/vim/vim82/plugin/matchparen.vim
+108.203  000.773  000.773: sourcing /usr/local/share/vim/vim82/plugin/netrwPlugin.vim
+108.380  000.120  000.120: sourcing /usr/local/share/vim/vim82/plugin/rrhelper.vim
+108.566  000.136  000.136: sourcing /usr/local/share/vim/vim82/plugin/spellfile.vim
+108.889  000.258  000.258: sourcing /usr/local/share/vim/vim82/plugin/tarPlugin.vim
+109.211  000.270  000.270: sourcing /usr/local/share/vim/vim82/plugin/tohtml.vim
+109.488  000.228  000.228: sourcing /usr/local/share/vim/vim82/plugin/vimballPlugin.vim
+109.788  000.245  000.245: sourcing /usr/local/share/vim/vim82/plugin/zipPlugin.vim
+109.962  000.029  000.029: sourcing /usr/local/share/vim/vim82/pack/dist/opt/matchit/plugin/matchit.vim
+109.968  007.139: loading plugins
+110.071  000.103: loading packages
+110.133  000.062: loading after plugins
+110.138  000.005: inits 3
+111.833  001.695: reading viminfo
+111.861  000.028: setting raw mode
+111.880  000.019: start termcap
+111.896  000.016: clearing screen
+118.624  000.578  000.578: sourcing /usr/local/share/vim/vim82/scripts.vim
+129.070  009.290  009.290: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/autoload/fugitive.vim
+132.425  000.713  000.713: sourcing /Users/nathanjones/.vim/bundle/ale/autoload/ale.vim
+132.530  010.053: opening buffers
+133.896  001.366: BufEnter autocommands
+133.929  000.033: editing files in windows
+134.232  000.303: VimEnter autocommands
+134.234  000.002: before starting main loop
+141.926  007.692: first screen update
+141.928  000.002: --- VIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.007  000.007: --- VIM STARTING ---
+000.110  000.103: Allocated generic buffers
+000.596  000.486: locale set
+000.600  000.004: clipboard setup
+000.605  000.005: window checked
+001.315  000.710: inits 1
+001.492  000.177: parsing arguments
+001.494  000.002: expanding arguments
+006.343  004.849: shell init
+006.697  000.354: Termcap init
+006.712  000.015: inits 2
+006.840  000.128: init highlight
+009.846  001.515  001.515: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+009.965  001.827  000.312: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+016.302  000.472  000.472: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+016.417  006.372  005.900: sourcing /usr/local/share/vim/vim82/filetype.vim
+016.451  008.587  000.388: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+019.832  002.910  002.910: sourcing /Users/nathanjones/.vim/autoload/plug.vim
+024.086  001.629  001.629: sourcing /usr/local/share/vim/vim82/ftoff.vim
+031.643  000.541  000.541: sourcing /Users/nathanjones/.vim/bundle/vim-elixir/ftdetect/elixir.vim
+031.978  000.185  000.185: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/flow.vim
+032.245  000.209  000.209: sourcing /Users/nathanjones/.vim/bundle/vim-javascript/ftdetect/javascript.vim
+032.560  000.189  000.189: sourcing /Users/nathanjones/.vim/bundle/vim-slim/ftdetect/slim.vim
+033.164  000.475  000.475: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/ftdetect/fugitive.vim
+033.574  000.232  000.232: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby.vim
+033.943  000.307  000.307: sourcing /Users/nathanjones/.vim/bundle/vim-ruby/ftdetect/ruby_extra.vim
+034.285  000.197  000.197: sourcing /Users/nathanjones/.vim/bundle/vim-jsx/ftdetect/javascript.vim
+034.463  000.014  000.014: sourcing /usr/local/share/vim/vimfiles/ftdetect/pullrequest.vim
+034.558  008.713  006.364: sourcing /usr/local/share/vim/vim82/filetype.vim
+034.774  000.036  000.036: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+034.969  000.032  000.032: sourcing /usr/local/share/vim/vim82/indent.vim
+035.061  018.500  005.180: sourcing /Users/nathanjones/.vimrc.bundles
+037.730  001.020  001.020: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/pack/dist/opt/matchit/plugin/matchit.vim
+037.798  002.078  001.058: sourcing /usr/local/share/vim/vim82/macros/matchit.vim
+038.026  000.019  000.019: sourcing /usr/local/share/vim/vim82/filetype.vim
+038.213  000.012  000.012: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+038.389  000.010  000.010: sourcing /usr/local/share/vim/vim82/indent.vim
+040.017  000.470  000.470: sourcing /usr/local/Cellar/vim/8.2.0/share/vim/vim82/syntax/nosyntax.vim
+040.568  000.146  000.146: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+040.711  000.475  000.329: sourcing /usr/local/share/vim/vim82/syntax/synload.vim
+040.741  001.256  000.311: sourcing /usr/local/share/vim/vim82/syntax/syntax.vim
+041.127  000.136  000.136: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+041.687  000.128  000.128: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+042.059  000.129  000.129: sourcing /usr/local/share/vim/vim82/syntax/syncolor.vim
+051.410  010.141  009.884: sourcing /Users/nathanjones/.vim/bundle/vim-one/colors/one.vim
+051.479  044.412  003.673: sourcing $HOME/.vimrc
+051.486  000.234: sourcing vimrc file(s)
+052.210  000.508  000.508: sourcing /Users/nathanjones/.vim/plugin/ctags.vim
+052.516  000.132  000.132: sourcing /Users/nathanjones/.vim/bundle/vim-run-interactive/plugin/run-interactive.vim
+054.314  001.682  001.682: sourcing /Users/nathanjones/.fzf/plugin/fzf.vim
+055.586  000.447  000.447: sourcing /Users/nathanjones/.vim/bundle/vim-test/autoload/test.vim
+056.367  001.881  001.434: sourcing /Users/nathanjones/.vim/bundle/vim-test/plugin/test.vim
+056.718  000.195  000.195: sourcing /Users/nathanjones/.vim/bundle/vim-mkdir/plugin/mkdir.vim
+058.300  001.447  001.447: sourcing /Users/nathanjones/.vim/bundle/vim-bundler/plugin/bundler.vim
+059.010  000.587  000.587: sourcing /Users/nathanjones/.vim/bundle/vim-endwise/plugin/endwise.vim
+060.752  001.094  001.094: sourcing /Users/nathanjones/.vim/bundle/vim-eunuch/plugin/eunuch.vim
+063.007  002.114  002.114: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/plugin/fugitive.vim
+063.787  000.623  000.623: sourcing /Users/nathanjones/.vim/bundle/vim-projectionist/plugin/projectionist.vim
+065.238  001.331  001.331: sourcing /Users/nathanjones/.vim/bundle/vim-rails/plugin/rails.vim
+066.555  001.157  001.157: sourcing /Users/nathanjones/.vim/bundle/vim-rake/plugin/rake.vim
+067.248  000.525  000.525: sourcing /Users/nathanjones/.vim/bundle/vim-rhubarb/plugin/rhubarb.vim
+068.212  000.813  000.813: sourcing /Users/nathanjones/.vim/bundle/vim-surround/plugin/surround.vim
+072.203  003.820  003.820: sourcing /Users/nathanjones/.vim/bundle/tComment/plugin/tcomment.vim
+072.899  000.518  000.518: sourcing /Users/nathanjones/.vim/bundle/vim-tmux-navigator/plugin/tmux_navigator.vim
+073.884  000.853  000.853: sourcing /Users/nathanjones/.vim/bundle/vim-tmux-runner/plugin/vim-tmux-runner.vim
+074.582  000.569  000.569: sourcing /Users/nathanjones/.vim/bundle/vim-rspec/plugin/rspec.vim
+075.558  000.821  000.821: sourcing /Users/nathanjones/.vim/bundle/auto-pairs/plugin/auto-pairs.vim
+076.200  000.028  000.028: sourcing /usr/local/share/vim/vim82/filetype.vim
+076.421  000.014  000.014: sourcing /usr/local/share/vim/vim82/ftplugin.vim
+076.616  000.012  000.012: sourcing /usr/local/share/vim/vim82/indent.vim
+076.817  001.113  001.059: sourcing /Users/nathanjones/.vim/bundle/vim-sensible/plugin/sensible.vim
+079.849  002.904  002.904: sourcing /Users/nathanjones/.vim/bundle/vim-dispatch/plugin/dispatch.vim
+080.691  000.676  000.676: sourcing /Users/nathanjones/.vim/bundle/vim-conflicted/plugin/conflicted.vim
+083.730  001.069  001.069: sourcing /Users/nathanjones/.vim/bundle/ale/autoload/ale/events.vim
+084.081  003.224  002.155: sourcing /Users/nathanjones/.vim/bundle/ale/plugin/ale.vim
+084.749  000.216  000.216: sourcing /usr/local/share/vim/vim82/plugin/getscriptPlugin.vim
+085.201  000.389  000.389: sourcing /usr/local/share/vim/vim82/plugin/gzip.vim
+085.720  000.464  000.464: sourcing /usr/local/share/vim/vim82/plugin/logiPat.vim
+085.968  000.193  000.193: sourcing /usr/local/share/vim/vim82/plugin/manpager.vim
+086.513  000.491  000.491: sourcing /usr/local/share/vim/vim82/plugin/matchparen.vim
+087.378  000.809  000.809: sourcing /usr/local/share/vim/vim82/plugin/netrwPlugin.vim
+087.619  000.169  000.169: sourcing /usr/local/share/vim/vim82/plugin/rrhelper.vim
+087.834  000.144  000.144: sourcing /usr/local/share/vim/vim82/plugin/spellfile.vim
+088.330  000.432  000.432: sourcing /usr/local/share/vim/vim82/plugin/tarPlugin.vim
+088.712  000.304  000.304: sourcing /usr/local/share/vim/vim82/plugin/tohtml.vim
+089.141  000.353  000.353: sourcing /usr/local/share/vim/vim82/plugin/vimballPlugin.vim
+089.484  000.274  000.274: sourcing /usr/local/share/vim/vim82/plugin/zipPlugin.vim
+089.664  000.030  000.030: sourcing /usr/local/share/vim/vim82/pack/dist/opt/matchit/plugin/matchit.vim
+089.670  005.329: loading plugins
+089.776  000.106: loading packages
+089.836  000.060: loading after plugins
+089.841  000.005: inits 3
+091.478  001.637: reading viminfo
+091.503  000.025: setting raw mode
+091.524  000.021: start termcap
+091.539  000.015: clearing screen
+098.292  000.752  000.752: sourcing /usr/local/share/vim/vim82/scripts.vim
+106.804  007.238  007.238: sourcing /Users/nathanjones/.vim/bundle/vim-fugitive/autoload/fugitive.vim
+110.260  000.750  000.750: sourcing /Users/nathanjones/.vim/bundle/ale/autoload/ale.vim
+110.353  010.074: opening buffers
+111.701  001.348: BufEnter autocommands
+111.705  000.004: editing files in windows
+112.150  000.445: VimEnter autocommands
+112.153  000.003: before starting main loop
+113.659  001.506: first screen update
+113.660  000.001: --- VIM STARTED ---

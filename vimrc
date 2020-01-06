@@ -31,6 +31,23 @@ imap kj <esc>
 imap <C-s> <esc>:w<cr>
 nmap <C-s> :w<cr>
 
+nnoremap <leader>v- :VtrOpenRunner { "orientation": "v", "percentage": 30 }<cr>
+nnoremap <leader>v\ :VtrOpenRunner { "orientation": "h", "percentage": 30 }<cr>
+nnoremap <leader>vk :VtrKillRunner<cr>
+nnoremap <leader>va :VtrAttachToPane<cr>
+nnoremap <leader>v0 :VtrAttachToPane 0<cr>:call system("tmux clock-mode -t 0 && sleep 0.1 && tmux send-keys -t 0 q")<cr>
+nnoremap <leader>v1 :VtrAttachToPane 1<cr>:call system("tmux clock-mode -t 1 && sleep 0.1 && tmux send-keys -t 1 q")<cr>
+nnoremap <leader>v2 :VtrAttachToPane 2<cr>:call system("tmux clock-mode -t 2 && sleep 0.1 && tmux send-keys -t 2 q")<cr>
+nnoremap <leader>v3 :VtrAttachToPane 3<cr>:call system("tmux clock-mode -t 3 && sleep 0.1 && tmux send-keys -t 3 q")<cr>
+nnoremap <leader>fr :VtrFocusRunner<cr>
+noremap <C-f> :VtrSendLinesToRunner<cr>
+
+nnoremap <leader>sq :VtrSendKeysRaw q<cr>
+nnoremap <leader>sd :VtrSendKeysRaw ^D<cr>
+nnoremap <leader>sl :VtrSendKeysRaw ^L<cr>
+nnoremap <leader>sc :VtrSendKeysRaw ^C<cr>
+nnoremap <leader>vs :VtrSendCommandToRunner<space>
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -114,6 +131,11 @@ if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
 
   nnoremap \ :Ag<SPACE>
+
+  if !exists(":Ag")
+    command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+    " nnoremap \ :Ag<SPACE>
+  endif
 endif
 
 " Make it obvious where 80 characters is
@@ -221,11 +243,24 @@ endif
 syntax on
 set background=dark
 colorscheme one
-" colorscheme palenight
-" colorscheme onedark
-" colorscheme codedark
-
 set tags^=.git/tags;
 set rtp+=~/.fzf
 
-" execute pathogen#infect()
+" Tmux + Vim Balance Configurations
+" automatically rebalance windows on vim resize"
+autocmd VimResized * :wincmd =
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+" Open irb in Tmux pane from vim
+" nnoremap <leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'irb'}<cr>
+" nnoremap <leader>rc :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'rails c'}<cr>
+"
+let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>fr :VtrFocusRunner<CR>

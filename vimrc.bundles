@@ -50,7 +50,13 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 Plug 'rakr/vim-one'
 Plug 'mxw/vim-jsx'
-
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
+Plug 'thoughtbot/vim-rspec'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-dispatch'
+ 
 if g:has_async
   Plug 'dense-analysis/ale'
 endif

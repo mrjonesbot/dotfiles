@@ -29,7 +29,7 @@ else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 endif
 
-" Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 Plug 'elixir-lang/vim-elixir'
 " Plug 'fatih/vim-go'
 Plug 'janko-m/vim-test'
@@ -57,6 +57,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-dispatch'
 Plug 'christoomey/vim-conflicted'
+Plug 'nathanaelkane/vim-indent-guides'
  
 if g:has_async
   Plug 'dense-analysis/ale'

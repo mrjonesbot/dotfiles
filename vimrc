@@ -142,6 +142,9 @@ endif
 set textwidth=80
 set colorcolumn=+1
 
+au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile gitcommit setlocal textwidth=80
+
 " Numbers
 set number
 set numberwidth=5

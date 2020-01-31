@@ -23,7 +23,7 @@ nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
 nmap <leader>vi :tabedit ~/.vimrc<cr>
-nmap <leader>co ggVG*y
+map <leader>co mmgg"*yG`m
 
 imap jk <esc>
 imap kj <esc>
@@ -87,6 +87,10 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile gitconfig.local set filetype=gitconfig
   autocmd BufRead,BufNewFile tmux.conf.local set filetype=tmux
   autocmd BufRead,BufNewFile vimrc.local set filetype=vim
+  autocmd BufRead,BufNewFile *.tt     set filetype=eruby
+  autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+  autocmd BufRead,BufNewFile gitcommit setlocal textwidth=80
+  autocmd BufEnter *.png,*.jpg,*gif exec "! ~/.iterm2/imgcat ".expand("%") | :bw
 augroup END
 
 " ALE linting events
@@ -142,8 +146,6 @@ endif
 set textwidth=80
 set colorcolumn=+1
 
-au BufRead,BufNewFile *.md setlocal textwidth=80
-au BufRead,BufNewFile gitcommit setlocal textwidth=80
 
 " Numbers
 set number

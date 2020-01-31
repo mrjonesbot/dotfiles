@@ -58,7 +58,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-dispatch'
 Plug 'christoomey/vim-conflicted'
 Plug 'nathanaelkane/vim-indent-guides'
- 
+
 if g:has_async
   Plug 'dense-analysis/ale'
 endif

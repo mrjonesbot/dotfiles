@@ -30,8 +30,16 @@ else
 endif
 
 Plug 'junegunn/fzf.vim'
-Plug 'elixir-lang/vim-elixir'
+" Plug 'elixir-lang/vim-elixir'
 " Plug 'fatih/vim-go'
+"
+" snippet support
+" Plug 'MarcWeber/vim-addon-mw-utils'
+" Plug 'tomtom/tlib_vim'
+" Plug 'garbas/vim-snipmate'
+" Plug 'honza/vim-snippets'
+
+Plug 'mattn/emmet-vim'
 Plug 'janko-m/vim-test'
 Plug 'pangloss/vim-javascript'
 Plug 'pbrisbin/vim-mkdir'

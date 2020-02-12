@@ -15,6 +15,9 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
 set nomodeline
+set redrawtime=10000
+set re=1
+set ttyfast
 
 " Easy access to the start of the line
 nmap 0 ^
@@ -90,7 +93,6 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.tt     set filetype=eruby
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
   autocmd BufRead,BufNewFile gitcommit setlocal textwidth=80
-  autocmd BufEnter *.png,*.jpg,*gif exec "! ~/.iterm2/imgcat ".expand("%") | :bw
 augroup END
 
 " ALE linting events

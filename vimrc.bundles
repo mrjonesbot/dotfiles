@@ -34,10 +34,10 @@ Plug 'junegunn/fzf.vim'
 " Plug 'fatih/vim-go'
 "
 " snippet support
-" Plug 'MarcWeber/vim-addon-mw-utils'
-" Plug 'tomtom/tlib_vim'
-" Plug 'garbas/vim-snipmate'
-" Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/vim/ultisnips']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsEditSplit="vertical"
 
 Plug 'mattn/emmet-vim'
 Plug 'janko-m/vim-test'

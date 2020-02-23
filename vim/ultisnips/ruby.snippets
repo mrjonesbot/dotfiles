@@ -1,0 +1,17 @@
+snippet rbc
+class ${1:ClassName}
+	attr_reader :${2:param}
+
+	def initialize(${2:param})
+		@${2:param} = ${2:param}
+	end
+end
+endsnippet
+
+snippet decor
+class ${1:ClassName}Decorator < SimpleDelegator
+	def initialize(${2:record}, cache: {})
+		super(${2:record})
+	end
+end
+endsnippet

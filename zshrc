@@ -40,11 +40,13 @@ _load_settings "$HOME/.zsh/configs"
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
 export GOPATH=$HOME/go
 export GO111MODULE=on
 
 eval "$(rbenv init -)"
-export PATH="/usr/local/opt/libxml2/bin:$PATH"
+# export PATH="/usr/local/opt/libxml2/bin:$PATH"
 
 # nvm() {
 #     unset -f nvm
@@ -103,4 +105,3 @@ ensure_tmux_is_running
 alias dc=docker-compose
 alias de=docker_compose_exec
 alias da=docker_compose_attach
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

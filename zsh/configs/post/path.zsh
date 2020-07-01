@@ -11,6 +11,7 @@ elif which brew >/dev/null &&
 fi
 
 # mkdir .git/safe in the root of repositories you trust
+PATH="$HOME/.fzf/bin:$PATH"
 PATH=".git/safe/../../bin:$PATH"
 
 export -U PATH

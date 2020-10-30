@@ -264,9 +264,36 @@ nnoremap <leader>= :wincmd =<cr>
 " nnoremap <leader>rc :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'rails c'}<cr>
 "
 let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
+let g:minitest_command = "VtrSendCommandToRunner! ./bin/rails test {test}"
 
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 map <Leader>fr :VtrFocusRunner<CR>
+
+" ./bin/rails test test/models/user_test.rb:59
+
+function! RunNearestTest()
+  let s:test_file = s:CurrentFilePath()
+  let s:test_file_with_line = s:test_file . ":" . line(".")
+  let s:test = substitute(g:minitest_command, "{test}", s:test_file_with_line, "g")
+  execute s:test
+endfunction
+
+function! RunTestFile()
+  let s:test_file = s:CurrentFilePath()
+  let s:test = substitute(g:minitest_command, "{test}", s:test_file, "g")
+  execute s:test
+endfunction
+
+function! s:CurrentFilePath()
+  return @%
+endfunction
+
+" map <Leader>mt :TestFile<CR>
+" map <Leader>ms :TestNearest<CR>
+map <Leader>mt :call RunTestFile()<CR>
+map <Leader>ms :call RunNearestTest()<CR>
+map <Leader>ml :TestLast<CR>
+map <Leader>ma :TestSuite<CR>

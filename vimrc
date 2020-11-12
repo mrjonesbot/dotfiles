@@ -281,6 +281,11 @@ function! RunTestFile()
   execute s:test
 endfunction
 
+function! RunTestSuite()
+  let s:command = substitute(g:minitest_command, "{test}", "", "g")
+  execute s:command
+endfunction
+
 function! s:CurrentFilePath()
   return @%
 endfunction
@@ -290,4 +295,4 @@ endfunction
 map <Leader>mt :call RunTestFile()<CR>
 map <Leader>ms :call RunNearestTest()<CR>
 map <Leader>ml :TestLast<CR>
-map <Leader>ma :TestSuite<CR>
+map <Leader>ma :call RunTestSuite()<CR>

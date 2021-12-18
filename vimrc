@@ -93,6 +93,7 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.tt     set filetype=eruby
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
   autocmd BufRead,BufNewFile gitcommit setlocal textwidth=80
+  autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.typescriptreact
 augroup END
 
 " ALE linting events
@@ -251,6 +252,7 @@ colorscheme one
 set tags^=.git/tags;
 set rtp+=~/.fzf
 set stl+=%{ConflictedVersion()}
+set mmp=5000
 
 " Tmux + Vim Balance Configurations
 " automatically rebalance windows on vim resize"

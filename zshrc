@@ -45,7 +45,7 @@ _load_settings "$HOME/.zsh/configs"
 export GOPATH=$HOME/go
 export GO111MODULE=on
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 # export PATH="/usr/local/opt/libxml2/bin:$PATH"
 
 # nvm() {
@@ -105,3 +105,6 @@ ensure_tmux_is_running
 alias dc=docker-compose
 alias de=docker_compose_exec
 alias da=docker_compose_attach
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform

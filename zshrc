@@ -45,8 +45,6 @@ _load_settings "$HOME/.zsh/configs"
 export GOPATH=$HOME/go
 export GO111MODULE=on
 
-eval "$(rbenv init - zsh)"
-
 function docker_compose_container {
   dirname=${PWD##*/}
   container="${COMPOSE_PROJECT_NAME:-$dirname}_$1_1"
@@ -84,6 +82,10 @@ alias dc=docker-compose
 alias de=docker_compose_exec
 alias da=docker_compose_attach
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
+# autoload -U +X bashcompinit && bashcompinit
+# complete -o nospace -C /usr/local/bin/terraform terraform
+# export PATH="/usr/local/opt/icu4c/bin:$PATH"
+
+export PATH="$HOME/.bin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"

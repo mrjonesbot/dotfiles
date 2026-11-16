@@ -1,2 +1,5 @@
 !bin
 vim/bundle/
+
+# machine-specific
+Brewfile.lock.json

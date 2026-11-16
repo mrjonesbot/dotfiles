@@ -60,7 +60,14 @@ asdf plugin add uv     https://github.com/asdf-community/asdf-uv.git || true
 say "Installing Neovim plugins"
 nvim --headless "+Lazy! restore" +qa
 
-# 9. Default shell -> Homebrew zsh
+# 9. Claude Code status line (statusline.sh is linked by rcup; settings.json stays machine-local)
+CLAUDE_SETTINGS="$HOME/.claude/settings.json"
+mkdir -p "$HOME/.claude"
+[ -s "$CLAUDE_SETTINGS" ] || echo '{}' > "$CLAUDE_SETTINGS"
+tmp="$(mktemp)"
+jq '.statusLine = {"type": "command", "command": "~/.claude/statusline.sh"}' "$CLAUDE_SETTINGS" > "$tmp" && mv "$tmp" "$CLAUDE_SETTINGS"
+
+# 10. Default shell -> Homebrew zsh
 ZSH_PATH="$(brew --prefix)/bin/zsh"
 if [ "$SHELL" != "$ZSH_PATH" ]; then
   say "Setting default shell to $ZSH_PATH"

@@ -18,7 +18,8 @@ curl -fsSL https://raw.githubusercontent.com/nathanjones-ts/dotfiles/main/instal
 5. Symlinks the dotfiles into `~` with `rcup`, which also installs Vim plugins through vim-plug
 6. Installs Ruby, Node, Rust and uv through asdf, at the versions in `tool-versions`
 7. Installs the Neovim plugins through lazy.nvim, at the commits in `lazy-lock.json`
-8. Makes Homebrew's zsh your login shell
+8. Points Claude Code's status line at `~/.claude/statusline.sh`. It leaves the rest of `settings.json` alone.
+9. Makes Homebrew's zsh your login shell
 
 ## What's here
 
@@ -31,6 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/nathanjones-ts/dotfiles/main/instal
 | `config/nvim/` | `~/.config/nvim` | Neovim config using lazy.nvim, with onedark, telescope and vim-tmux-navigator |
 | `gitconfig`, `gitignore`, `gitmessage`, `git_template/` | `~/.git*` | Git aliases and defaults |
 | `bin/` | `~/.bin` | Git helpers, `tat` (tmux attach), port tools |
+| `claude/statusline.sh` | `~/.claude/statusline.sh` | Claude Code status line: the model name and a color-coded bar showing how full the context is |
 | `tool-versions` | `~/.tool-versions` | Global asdf runtime versions |
 | `Brewfile` | — | Homebrew formulae and casks |
 

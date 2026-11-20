@@ -55,3 +55,5 @@ cask "docker-desktop"
 cask "gpg-suite-no-mail"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Terminal emulator (config in config/ghostty/config)
+cask "ghostty"

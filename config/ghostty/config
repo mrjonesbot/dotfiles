@@ -1,0 +1,2 @@
+# Open every Ghostty window inside a persistent tmux session named "main"
+command = /opt/homebrew/bin/tmux new-session -A -s main

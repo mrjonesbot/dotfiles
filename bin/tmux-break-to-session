@@ -1,0 +1,28 @@
+#!/bin/sh
+# Move a tmux pane into a brand-new session and switch to it.
+# Usage: tmux-break-to-session <session-name> [pane-id]
+# (name defaults to the pane's directory name; taken names get -2, -3, ...)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+pane="$2"
+case "$pane" in %*) ;; *) pane=$(tmux display-message -p "#{pane_id}") ;; esac
+# tmux session names can't contain '.' or ':'
+name=$(printf '%s' "$1" | tr '.:' '__')
+
+if [ -z "$name" ]; then
+  tmux display-message "break-to-session: no session name given"
+  exit 0
+fi
+# if the name is taken, append -2, -3, ...
+base="$name"; n=2
+while tmux has-session -t "=$name" 2>/dev/null; do
+  name="$base-$n"; n=$((n + 1))
+done
+
+dir=$(tmux display-message -p -t "$pane" '#{pane_current_path}')
+tmux new-session -d -s "$name" -c "$dir"
+placeholder=$(tmux list-windows -t "=$name" -F '#{window_id}' | head -n 1)
+# switch first, so we stay attached even if the old session closes when its last pane leaves
+tmux switch-client -t "=$name"
+tmux break-pane -s "$pane" -t "=$name:"
+tmux kill-window -t "$placeholder"

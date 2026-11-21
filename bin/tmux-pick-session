@@ -1,0 +1,30 @@
+#!/bin/sh
+# Pick another tmux session from a plain list (no search bar).
+#   j / p      move down / up
+#   any other letter or digit filters (backspace removes the last one)
+#   enter      switch to the highlighted session; esc closes
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+current=$(tmux display-message -p '#S')
+
+# fzf's input bar is hidden, so typed filter text is kept in a temp file and
+# applied with transform-search
+q=$(mktemp -t tmux-pick-session)
+trap 'rm -f "$q"' EXIT
+
+binds=""
+for k in a b c d e f g h i k l m n o q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 - _; do
+  binds="$binds,$k:transform-search(printf %s $k >> $q; cat $q)"
+done
+binds="${binds#,}"
+
+target=$(
+  tmux list-sessions -F '#{session_name}' |
+    grep -vx "$current" |
+    fzf --reverse --no-input --no-info --pointer='>' \
+      --bind "$binds" \
+      --bind "bspace:transform-search(sed 's/.\$//' $q > $q.tmp; mv $q.tmp $q; cat $q)" \
+      --bind 'j:down,p:up,ctrl-j:down,ctrl-p:up'
+)
+[ -n "$target" ] && tmux switch-client -t "$target"
+exit 0
